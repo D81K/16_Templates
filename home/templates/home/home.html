@@ -1,3 +1,9 @@
-Hello world!
-My name is {{first_name}} {{last_name}}
-My age is {{age}}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+
+<h1>HELLO WORLD</h1>
+
+<img src="{% static 'home/kitten.jpg' %}" alt="kitten">
